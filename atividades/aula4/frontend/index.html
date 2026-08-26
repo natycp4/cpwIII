@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aprendizado</title>
+
+    <style>
+        body{
+            background-color: rgb(196, 247, 230);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2{ 
+            color: rgb(94, 44, 91);
+        }
+
+        form{
+            background-color: rgb(236, 140, 161);
+            border: 2px solid #3ad499;
+            border-radius: 10px;
+            padding: 34px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea, button {
+        box-sizing: border-box;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #3ad499;
+        margin-bottom: 12px;
+       }
+       button {
+        background-color: aquamarine;
+        color: rgb(196, 43, 114);
+        cursor: pointer;
+       }
+       button:hover{
+        background-color: rgb(27, 155, 116);
+       }
+    </style>
 </head>
 <body>
     <h2>Digite sobre o que voce aprendeu hoje</h2>
 
 <form action="http://localhost:3000/estudo" method="POST">
+    <label for="materia">Nome da matéria:</label> <br>
   <input type="text" name="materia" placeholder="materia" required> 
   <br><br>
 
+  <label for="aprendeu">Aprendeu sobre:</label> <br>
 <textarea name="aprendizado" placeholder="Oque voce aprendeu hoje?" required></textarea>
  <br><br>
 
